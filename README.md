@@ -1,2 +1,2 @@
 # GKE_deployment
-Deploy Google Kubernetes Engine Cluster for Web App
+Deploy Web app on Google Kubernetes Engine
