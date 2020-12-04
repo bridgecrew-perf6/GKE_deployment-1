@@ -1,14 +1,16 @@
 <!doctype html>
+{% autoescape true %}
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <title>{{model.title}}</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://storage.googleapis.com/static/css/normalize.css">
+    <link rel="stylesheet" href="https://storage.googleapis.com/static/css/main.css">
+    <link href='https://fonts.googleapis.com/css?sadfamily=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
+    {% block content %}
     <header>
         <div class="full-width">
             <div class="half-width">
@@ -43,18 +45,18 @@
         <section id="work">
             <div class="full-width">
                 <div class="third-width">
-                    <img src="img/html-icon.png" alt="HTML icon" />
+                    <img src="https://storage.googleapis.com/static/img/html-icon.pn'" alt="HTML icon" />
                     <h3>HTML Page</h3>
                     <p>Sample HTML Content with links to additional resource</p>
                 </div>
                 <div class="third-width">
-                    <img src="img/css-icon.png" alt="CSS icon" />
+                    <img src="https://storage.googleapis.com/static/img/css-icon.png" alt="CSS icon" />
                     <h3>Well-Organized CSS</h3>
                     <p>I pride myself on writing CSS that is easy to read and build on. I focus on keeping my CSS lean
                         and fast to load, and I make it a habit to stay up to date on current best practices.</p>
                 </div>
                 <div class="third-width">
-                    <img src="img/pencil-icon.png" alt="Pencil icon" />
+                    <img src="https://storage.googleapis.com/static/img/pencil-icon.png" alt="Pencil icon" />
                     <h3>Ease Converting Designs into Code</h3>
                     <p>You can trust me to take a designer's PSD and quickly &amp; accurately convert it into a webpage
                         that is pixel-perfect match.</p>
@@ -66,11 +68,13 @@
             <div class="full-width">
                 <h1 id="socialmedia-header">Links</h1>
                     <ul>
-                        <li><a href=""><img src="img/linkedin2.png" alt="linkedin icon" /></a></li>
-                        <li><a href=""><img src="img/github2.png" alt="github icon" /></a></li>
+                        <li><a href=""><img src="https://storage.googleapis.com/static/img/linkedin2.png" alt="linkedin icon" /></a></li>
+                        <li><a href=""><img src="https://storage.googleapis.com/static/img/github2.png" alt="github icon" /></a></li>
                     </ul>
             </div>
         </footer>
     </main>
+    {% endblock %}
 </body>
 </html>
+{% endautoescape %}

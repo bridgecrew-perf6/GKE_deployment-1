@@ -1,10 +1,10 @@
 from flask import Flask, render_template, request
 
-app = Flask(__name__)
+app = Flask(__name__,static_folder="/templates/static")
 
 @app.route("/")
 def main():
-    model = {"title": "Hello DevOps Fans."}
+    model = {"title": "Simple Web App Built and Hosted on GCP"}
     return render_template('index.html', model=model)
 
 if __name__ == "__main__":
